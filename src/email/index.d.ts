@@ -1,2 +1,1 @@
-export declare type Email = string;
-
+export type EmailType = string

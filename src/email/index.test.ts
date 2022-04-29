@@ -1,5 +1,9 @@
-import { sum } from "./index";
+import { isEmail } from "./index";
 
-test("print hello world", () => {
-  expect(sum(1, 2)).toBe(3);
+test("test email type: true", () => {
+  expect(isEmail("aaa")).toBe(true);
+});
+
+test("test email type: false", () => {
+  expect(isEmail(112)).toBe(false);
 });
