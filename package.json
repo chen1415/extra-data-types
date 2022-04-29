@@ -1,0 +1,26 @@
+{
+  "name": "extra-data-types",
+  "version": "1.0.0",
+  "description": "some frequently used ts data types",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen1415/extra-data-types.git"
+  },
+  "keywords": [
+    "typescript",
+    "data-type"
+  ],
+  "author": "haochen1993",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chen1415/extra-data-types/issues"
+  },
+  "homepage": "https://github.com/chen1415/extra-data-types#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
