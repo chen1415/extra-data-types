@@ -1,5 +1,5 @@
 {
-  "name": "@types/extra-data-types",
+  "name": "extra-data-types",
   "version": "1.0.0",
   "description": "some frequently used ts data types",
   "main": "src/index.js",
