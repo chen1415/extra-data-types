@@ -1,3 +1,6 @@
-import { emailRegConfig } from "./config";
+import { regEmailConfig } from "./config";
 
-export declare type EmailType = typeof emailRegConfig;
+export declare type EmailType = {
+  GmailType: typeof regEmailConfig.gamilRegConfig;
+  StandardType: typeof regEmailConfig.standardRegConfig;
+};

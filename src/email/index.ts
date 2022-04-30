@@ -1,5 +1,8 @@
 import type { EmailType } from "./index.d";
-import { emailRegConfig } from "./config";
+import { regEmailConfig } from "./config";
 
-export const isEmailType = (x: any): x is EmailType =>
-emailRegConfig.test(String(x).toLowerCase());
+export const isGmailType = (x: any): x is EmailType["GmailType"] =>
+  regEmailConfig.gamilRegConfig.test(String(x).toLowerCase());
+
+export const isEmailType = (x: any): x is EmailType["StandardType"] =>
+  regEmailConfig.standardRegConfig.test(String(x).toLowerCase());
