@@ -39,6 +39,7 @@ if (isStandardEmailType("example.example@gmail.com")) {
 type: 
 EmailType.StandardType
 EmailType.GmailType
+EmailType.QQmailType
 
 func:
 isStandardEmailType,
