@@ -17,6 +17,8 @@ jobs:
           pr-emoji: '+1, heart'
       - name: Install modules
         run: npm install
+      - name: PR check
+        run: npm run pr-check
       - name: Run tests
-        run: npm test
+        run: npm run test
 
