@@ -1,5 +1,5 @@
-import { EmailType } from "./index.d";
+import type { EmailType } from "./index.d";
+import { emailRegConfig } from "./config";
 
-export const isEmail = (x: any): x is EmailType => {
-  return typeof x === "string";
-};
+export const isEmailType = (x: any): x is EmailType =>
+emailRegConfig.test(String(x).toLowerCase());
