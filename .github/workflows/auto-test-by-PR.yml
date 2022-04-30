@@ -6,19 +6,21 @@ on:
       - main
 
 jobs:
+  install_modules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install modules
+        run: npm install
+  pr_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR check
+        run: npm run pr-check
+      - name: Run tests
+        run: npm run test
   run_tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - name: Check out repository code
-        uses: actions/checkout@v3
-        with:
-          pr-emoji: '+1, heart'
-      - name: Install modules
-        run: npm install
-      - name: PR check
-        run: npm run pr-check
       - name: Run tests
         run: npm run test
 
