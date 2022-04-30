@@ -15,7 +15,10 @@
   },
   "keywords": [
     "typescript",
-    "data-type"
+    "data-type",
+    "ts",
+    "email",
+    "email-type"
   ],
   "author": "haochen1993",
   "license": "MIT",

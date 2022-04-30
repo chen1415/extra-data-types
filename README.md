@@ -1,4 +1,4 @@
-## A lib gather some useful data types
+## A lib gather some useful ts data types
 
 ## Features
 
