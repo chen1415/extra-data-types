@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  pr_check:
+  run_tests:
     runs-on: ubuntu-latest
     steps:
       - name: Install modules
