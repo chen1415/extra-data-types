@@ -1,4 +1,4 @@
-name: PR Welcome
+name: auto-test-by-PR
 
 on: 
   pull_request:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  welcome:
+  run_tests:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
