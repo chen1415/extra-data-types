@@ -1,4 +1,4 @@
-import { regEmailConfig } from "./config";
+import { regEmailConfig } from './config';
 
 export declare namespace EmailType {
   type GmailType = typeof regEmailConfig.gamilRegConfig;
