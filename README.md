@@ -1,7 +1,6 @@
 ## A lib gather some useful ts data types
 
-[![codecov](https://codecov.io/gh/umijs/dumi/branch/master/graph/badge.svg)](https://codecov.io/gh/umijs/dumi) [![NPM version](https://img.shields.io/npm/v/dumi.svg?style=flat)](https://npmjs.org/package/dumi) [![GitHub Actions status](https://github.com/umijs/dumi/workflows/Node%20CI/badge.svg)](https://github.com/umijs/dumi) 
-[![issues-helper](https://img.shields.io/badge/using-issues--helper-orange)](https://github.com/actions-cool/issues-helper)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/chen1415/extra-data-types/coverage.svg?style=flat-square)](https://codecov.io/gh/chen1415/extra-data-types/)
 
 ## Intro
 
