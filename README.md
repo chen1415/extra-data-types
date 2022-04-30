@@ -1,9 +1,37 @@
-## 1.0 is out! 🎉🎉🎉
+## A lib gather some useful data types
 
 ## Features
 
-Gather some frequently used data types for TypeScript to use
+Currently support: StandardEmailType, GmailType
 
+
+## Use example
+
+type example
+```ts
+import type { EmailType } from "extra-data-types";
+
+const exampleEmail: EmailType.StandardType = 'example@example.com';
+const exampleGmail: EmailType.GmailType = 'example@gmail.com';
+```
+
+function example
+```ts
+import { isStandardEmailType, isGmailType } from "extra-data-types";
+
+if(isStandardEmailType("example.example@example.com")){
+  //do something when is valid of standard email type
+}else{
+  //...
+}
+
+if(isStandardEmailType("example.example@gmail.com")){
+  //do something when is valid of gmail type
+}else{
+  //...
+}
+
+```
 
 ## Contributing
 
