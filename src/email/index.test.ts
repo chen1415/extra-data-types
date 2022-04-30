@@ -16,7 +16,6 @@ test("test qq-mail type => false", () => {
   expect(isQQmailType("example@qa.com")).toBe(false);
 });
 
-
 test("test standard email type => true", () => {
   expect(isStandardEmailType("example.example@example.com")).toBe(true);
 });
