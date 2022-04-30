@@ -1,4 +1,4 @@
-import { isStandardEmailType, isGmailType } from "./index";
+import { isStandardEmailType, isGmailType, isQQmailType } from "./index";
 
 test("test gmail type => true", () => {
   expect(isGmailType("example@gmail.com")).toBe(true);
@@ -6,6 +6,10 @@ test("test gmail type => true", () => {
 
 test("test gmail type => false", () => {
   expect(isGmailType("example@cmail.com")).toBe(false);
+});
+
+test("test qq-mail type => true", () => {
+  expect(isQQmailType("example@qq.com")).toBe(true);
 });
 
 test("test standard email type => true", () => {
