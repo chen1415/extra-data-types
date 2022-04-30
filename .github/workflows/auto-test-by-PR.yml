@@ -9,8 +9,6 @@ jobs:
   run_tests:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
@@ -21,4 +19,6 @@ jobs:
         run: npm run pr-check
       - name: Run tests
         run: npm run test
-
+      - name: Generate coverage
+        if: matrix.node_version == '12.x' && matrix.os == 'ubuntu-latest'
+        run: bash <(curl -s https://codecov.io/bash)
