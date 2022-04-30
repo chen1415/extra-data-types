@@ -1,4 +1,4 @@
-import type { EmailType, GmailType } from "./email/index.d";
+import type { EmailType } from "./email/index.d";
 import { isEmailType, isGmailType } from "./email";
 
-export { EmailType, GmailType, isEmailType, isGmailType };
+export { EmailType, isEmailType, isGmailType };
