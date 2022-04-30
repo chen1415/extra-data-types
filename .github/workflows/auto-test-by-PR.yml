@@ -19,6 +19,5 @@ jobs:
         run: npm run pr-check
       - name: Run tests
         run: npm run test
-      - name: Generate coverage
-        if: matrix.node_version == '12.x' && matrix.os == 'ubuntu-latest'
-        run: bash <(curl -s https://codecov.io/bash)
+      - name: Upload coverage reports to Codecov with GitHub Action
+        uses: codecov/codecov-action@v3
