@@ -1,8 +1,11 @@
 ## A lib gather some useful ts data types
 
-## Features
+[![codecov](https://codecov.io/gh/umijs/dumi/branch/master/graph/badge.svg)](https://codecov.io/gh/umijs/dumi) [![NPM version](https://img.shields.io/npm/v/dumi.svg?style=flat)](https://npmjs.org/package/dumi) [![GitHub Actions status](https://github.com/umijs/dumi/workflows/Node%20CI/badge.svg)](https://github.com/umijs/dumi) 
+[![issues-helper](https://img.shields.io/badge/using-issues--helper-orange)](https://github.com/actions-cool/issues-helper)
 
-Currently support: StandardEmailType, GmailType
+## Intro
+
+A Umi-based doc tool can assist you to develop libraries & write docs.
 
 ## Use example
 
