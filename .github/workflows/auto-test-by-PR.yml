@@ -6,21 +6,15 @@ on:
       - main
 
 jobs:
-  install_modules:
+  pr_check:
     runs-on: ubuntu-latest
     steps:
       - name: Install modules
         run: npm install
-  pr_check:
-    runs-on: ubuntu-latest
-    steps:
       - name: PR check
         run: npm run pr-check
       - name: Run tests
         run: npm run test
-  run_tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run tests
-        run: npm run test
-
+      - name: Generate coverage
+        if: matrix.node_version == '12.x' && matrix.os == 'ubuntu-latest'
+        run: bash <(curl -s https://codecov.io/bash)
