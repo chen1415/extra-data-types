@@ -1,4 +1,4 @@
-name: auto-test-by-PR
+name: Auto Test by PR
 
 on: 
   pull_request:
