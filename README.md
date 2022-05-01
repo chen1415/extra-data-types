@@ -11,24 +11,24 @@ A Umi-based doc tool can assist you to develop libraries & write docs.
 - type example
 
 ```ts
-import type { EmailType } from "extra-data-types";
+import type { EmailSchema } from "extra-data-types";
 
-const exampleEmail: EmailType.StandardType = "example@example.com";
-const exampleGmail: EmailType.GmailType = "example@gmail.com";
+const exampleEmail: EmailSchema.StandardEmailType = "example@example.com";
+const exampleGmail: EmailSchema.GmailType = "example@gmail.com";
 ```
 
 - function example
 
 ```ts
-import { isStandardEmailType, isGmailType } from "extra-data-types";
+import { isStandardEmailSchema, isGmailType } from "extra-data-types";
 
-if (isStandardEmailType("example.example@example.com")) {
+if (isStandardEmailSchema("example.example@example.com")) {
   //do something when is valid of standard email type
 } else {
   //...
 }
 
-if (isStandardEmailType("example.example@gmail.com")) {
+if (isStandardEmailSchema("example.example@gmail.com")) {
   //do something when is valid of gmail type
 } else {
   //...
@@ -39,12 +39,12 @@ if (isStandardEmailType("example.example@gmail.com")) {
 
 ```ts
 type: 
-EmailType.StandardType
-EmailType.GmailType
-EmailType.QQmailType
+EmailSchema.StandardEmailType
+EmailSchema.GmailType
+EmailSchema.QQmailType
 
 func:
-isStandardEmailType,
+isStandardEmailSchema,
 isGmailType
 ```
 

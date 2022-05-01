@@ -6,7 +6,7 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "pr-check": "npm run format && npm run lint && npm run build",
+    "build-pr": "npm run format && npm run lint && npm run build",
     "test": "jest --config jestconfig.json"
   },
   "main": "src/index.js",

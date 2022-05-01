@@ -1,8 +1,8 @@
 name: Auto Test by PR
 
-on: 
+on:
   pull_request:
-    branches: 
+    branches:
       - main
 
 jobs:
@@ -12,11 +12,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
-          pr-emoji: '+1, heart'
+          pr-emoji: "+1, heart"
       - name: Install modules
         run: npm install
-      - name: PR check
-        run: npm run pr-check
+      - name: PR build
+        run: npm run build-pr
       - name: Run tests
         run: npm run test
       - name: Upload coverage reports to Codecov with GitHub Action
