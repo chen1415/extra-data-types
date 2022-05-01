@@ -1,10 +1,10 @@
-## A lib gather some useful ts data types
+## extra-data-types
 
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/chen1415/extra-data-types/coverage.svg?style=flat-square)](https://codecov.io/gh/chen1415/extra-data-types/)
 
 ## Intro
 
-A Umi-based doc tool can assist you to develop libraries & write docs.
+A simple lib, gather some useful data types of TS.
 
 ## Use example
 
@@ -46,6 +46,7 @@ EmailSchema.QQmailType
 func:
 isStandardEmailType,
 isGmailType
+isQQmailType
 ```
 
 ## Testing
