@@ -1,6 +1,6 @@
 {
   "name": "extra-data-types",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "some frequently used ts data types",
   "scripts": {
     "build": "tsc",
