@@ -20,15 +20,15 @@ const exampleGmail: EmailSchema.GmailType = "example@gmail.com";
 - function example
 
 ```ts
-import { isStandardEmailSchema, isGmailType } from "extra-data-types";
+import { isStandardEmailType, isGmailType } from "extra-data-types";
 
-if (isStandardEmailSchema("example.example@example.com")) {
+if (isStandardEmailType("example.example@example.com")) {
   //do something when is valid of standard email type
 } else {
   //...
 }
 
-if (isStandardEmailSchema("example.example@gmail.com")) {
+if (isStandardEmailType("example.example@gmail.com")) {
   //do something when is valid of gmail type
 } else {
   //...
@@ -44,7 +44,7 @@ EmailSchema.GmailType
 EmailSchema.QQmailType
 
 func:
-isStandardEmailSchema,
+isStandardEmailType,
 isGmailType
 ```
 
