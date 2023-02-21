@@ -15,6 +15,8 @@ jobs:
           pr-emoji: "+1, heart"
       - name: Install modules
         run: npm install
+        with:
+          node-version: 14.x
       - name: PR build
         run: npm run build-pr
       - name: Run tests
