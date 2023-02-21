@@ -16,7 +16,7 @@ jobs:
       - name: Install modules
         run: npm install
         with:
-          node-version: 14.0.0
+          node-version: 14.18.3
       - name: PR build
         run: npm run build-pr
       - name: Run tests
