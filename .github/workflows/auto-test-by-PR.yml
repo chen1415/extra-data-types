@@ -1,26 +1,20 @@
 name: Auto Test by PR
 
-on:
-  pull_request:
-    branches:
-      - main
+on: pull_request_target
 
 jobs:
   run-tests:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
           pr-emoji: "+1, heart"
-      # - name: Auto approve pull request
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.AUTO_PR_TEST_APPROVE }}
-      #   run: |
-      #     curl -X POST -H "Authorization: Bearer $GITHUB_TOKEN" \
-      #     -H "Accept: application/vnd.github.v3+json" \
-      #     https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/reviews \
-      #     -d '{"event":"APPROVE"}'
+      - uses: hmarr/auto-approve-action@v3
+        with:
+            github-token: ${{ secrets.AUTO_PR_TEST_APPROVE }}
       - name: Install modules
         run: npm install
       - name: PR build
