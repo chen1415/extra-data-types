@@ -1,0 +1,20 @@
+name: auto-approve
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Auto-approve pull request
+      uses: peter-evans/auto-approve@v1
+      with:
+        github-token: ${{ secrets.AUTO_PR_TEST_APPROVE }}
+        approve-command: 'merge'
