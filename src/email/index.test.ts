@@ -31,3 +31,7 @@ test('test email type => false', () => {
 test('test email type => false', () => {
   expect(isStandardEmailType('asdkfjaksdjfaskjfka')).toBe(false);
 });
+
+test('test email type => false', () => {
+  expect(isStandardEmailType('aaa')).toBe(false);
+});
