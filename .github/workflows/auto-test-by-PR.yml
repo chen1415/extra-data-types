@@ -2,8 +2,7 @@ name: Auto Test by PR
 
 on:
   pull_request:
-    branches:
-      - main
+    types: [opened, synchronize]
 
 jobs:
   run-tests:
