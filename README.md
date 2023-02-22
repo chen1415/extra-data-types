@@ -53,7 +53,12 @@ isQQmailType
 
 Clone the repository and execute:
 
+```
+node version v16.18.0
+```
+
 ```bash
+npm install
 npm test
 ```
 
