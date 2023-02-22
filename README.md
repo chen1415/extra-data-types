@@ -2,7 +2,7 @@
 
 [![Codecov Coverage](https://img.shields.io/codecov/c/github/chen1415/extra-data-types/coverage.svg?style=flat-square)](https://codecov.io/gh/chen1415/extra-data-types/)
 
-## Intro
+## Introduction
 
 A simple lib, gather some useful data types of TS.
 
