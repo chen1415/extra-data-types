@@ -51,11 +51,9 @@ isQQmailType
 
 ## Testing
 
-Clone the repository and execute:
+please use node version ```v16.18.0```
 
-```
-node version v16.18.0
-```
+Clone the repository and execute:
 
 ```bash
 npm install
