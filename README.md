@@ -6,33 +6,29 @@
 
 A simple lib, gather some useful data types of TS.
 
-## NodeJS version
-
-This project requires NodeJS 14.18.3
-
 ## Use example
 
 - type example
 
 ```ts
-import type { EmailSchema } from 'extra-data-types';
+import type { EmailSchema } from "extra-data-types";
 
-const exampleEmail: EmailSchema.StandardEmailType = 'example@example.com';
-const exampleGmail: EmailSchema.GmailType = 'example@gmail.com';
+const exampleEmail: EmailSchema.StandardEmailType = "example@example.com";
+const exampleGmail: EmailSchema.GmailType = "example@gmail.com";
 ```
 
 - function example
 
 ```ts
-import { isStandardEmailType, isGmailType } from 'extra-data-types';
+import { isStandardEmailType, isGmailType } from "extra-data-types";
 
-if (isStandardEmailType('example.example@example.com')) {
+if (isStandardEmailType("example.example@example.com")) {
   //do something when is valid of standard email type
 } else {
   //...
 }
 
-if (isStandardEmailType('example.example@gmail.com')) {
+if (isStandardEmailType("example.example@gmail.com")) {
   //do something when is valid of gmail type
 } else {
   //...
@@ -42,12 +38,15 @@ if (isStandardEmailType('example.example@gmail.com')) {
 ## Currently Support
 
 ```ts
-type: EmailSchema.StandardEmailType;
-EmailSchema.GmailType;
-EmailSchema.QQmailType;
+type: 
+EmailSchema.StandardEmailType
+EmailSchema.GmailType
+EmailSchema.QQmailType
 
-func: isStandardEmailType, isGmailType;
-isQQmailType;
+func:
+isStandardEmailType,
+isGmailType
+isQQmailType
 ```
 
 ## Testing
