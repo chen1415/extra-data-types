@@ -6,6 +6,10 @@
 
 A simple lib, gather some useful data types of TS.
 
+## NodeJS version
+
+This proejct requires NodeJS 14.18.3
+
 ## Use example
 
 - type example
