@@ -3,6 +3,6 @@ import { regDateConfig } from './config';
 
 export * from '.';
 
-export const isYYYY_MM_DDType = (x: any): x is DateSchema.YYYY_MM_DDType => regDateConfig.YYYY_MM_DDRegConfig.test(String(x));
+export const is_YYYYMMDD_Type = (x: any): x is DateSchema.YYYYMMDD_Type => regDateConfig.YYYYMMDD_RegConfig.test(String(x));
 
-export const isYYYY_MMM_DDType = (x: any): x is DateSchema.YYYY_MM_DDType => regDateConfig.YYYY_MMM_DDRegConfig.test(String(x));
+export const is_YYYYMMMDD_Type = (x: any): x is DateSchema.YYYYMMMDD_Type => regDateConfig.YYYYMMMDD_RegConfig.test(String(x));

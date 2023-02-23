@@ -39,22 +39,22 @@ if (isStandardEmailType("example.example@gmail.com")) {
 
 ```ts
 email type: 
-EmailSchema.StandardEmailType
-EmailSchema.GmailType
-EmailSchema.QQmailType
+EmailSchema.StandardEmail_Type
+EmailSchema.Gmail_Type
+EmailSchema.QQmail_Type
 
 date type:
-DateSchema.YYYY_MM_DDType
-DateSchema.YYYY_MMM_DDType
+DateSchema.YYYYMMDD_Type
+DateSchema.YYYYMMMDD_Type
 
 email func:
-isStandardEmailType,
-isGmailType
-isQQmailType
+is_StandardEmail_Type,
+is_Gmail_Type
+is_QQmail_Type
 
 date func:
-isYYYY_MM_DDType
-isYYYY_MMM_DDType
+is_YYYYMMDD_Type
+is_YYYYMMMDD_Type
 ```
 
 ## Testing

@@ -3,11 +3,11 @@ import { regEmailConfig } from './config';
 
 export * from './index.d';
 
-export const isGmailType = (x: any): x is EmailSchema.GmailType =>
-  regEmailConfig.gamilRegConfig.test(String(x).toLowerCase());
+export const is_Gmail_Type = (x: any): x is EmailSchema.Gmail_Type =>
+  regEmailConfig.gamil_RegConfig.test(String(x).toLowerCase());
 
-export const isQQmailType = (x: any): x is EmailSchema.QQmailType =>
-  regEmailConfig.qqRegConfig.test(String(x).toLowerCase());
+export const is_QQmail_Type = (x: any): x is EmailSchema.QQmail_Type =>
+  regEmailConfig.qq_RegConfig.test(String(x).toLowerCase());
 
-export const isStandardEmailType = (x: any): x is EmailSchema.StandardEmailType =>
-  regEmailConfig.standardRegConfig.test(String(x).toLowerCase());
+export const is_StandardEmail_Type = (x: any): x is EmailSchema.StandardEmail_Type =>
+  regEmailConfig.standard_RegConfig.test(String(x).toLowerCase());

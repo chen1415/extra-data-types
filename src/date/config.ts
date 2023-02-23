@@ -1,4 +1,4 @@
 export const regDateConfig = {
-  YYYY_MM_DDRegConfig: /\b[0-9]{4}_[0-9]{2}_[0-9]{2}\b/,
-  YYYY_MMM_DDRegConfig: /\b[0-9]{4}_[A-Z]{3}_[0-9]{2}\b/,
+  YYYYMMDD_RegConfig: /\b[0-9]{4}-[0-9]{2}-[0-9]{2}\b/,
+  YYYYMMMDD_RegConfig: /\b[0-9]{4}-[A-Z]{3}-[0-9]{2}\b/,
 };
