@@ -38,15 +38,23 @@ if (isStandardEmailType("example.example@gmail.com")) {
 ## Currently Support
 
 ```ts
-type: 
+email type: 
 EmailSchema.StandardEmailType
 EmailSchema.GmailType
 EmailSchema.QQmailType
 
-func:
+date type:
+DateSchema.YYYY_MM_DDType
+DateSchema.YYYY_MMM_DDType
+
+email func:
 isStandardEmailType,
 isGmailType
 isQQmailType
+
+date func:
+isYYYY_MM_DDType
+isYYYY_MMM_DDType
 ```
 
 ## Testing
