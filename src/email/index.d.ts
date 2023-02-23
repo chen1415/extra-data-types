@@ -1,7 +1,7 @@
 import { regEmailConfig } from './config';
 
 export declare namespace EmailSchema {
-  type GmailType = typeof regEmailConfig.gamilRegConfig;
-  type QQmailType = typeof regEmailConfig.qqRegConfig;
-  type StandardEmailType = typeof regEmailConfig.standardRegConfig;
+  type Gmail_Type = typeof regEmailConfig.gamil_RegConfig;
+  type QQmail_Type = typeof regEmailConfig.qq_RegConfig;
+  type StandardEmail_Type = typeof regEmailConfig.standard_RegConfig;
 }
