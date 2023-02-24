@@ -10,10 +10,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - uses: hmarr/auto-approve-action@v3
-        with:
-            github-token: ${{ secrets.AUTO_PR_TEST_APPROVE }}
-            exclude_authors: chen1415
+      # - uses: hmarr/auto-approve-action@v3
+      #   with:
+      #       github-token: ${{ secrets.AUTO_PR_TEST_APPROVE }}
+      #       exclude_authors: chen1415
       - name: Install modules
         run: npm install
       - name: PR build
