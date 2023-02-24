@@ -13,22 +13,22 @@ A simple lib, gather some useful data types of TS.
 ```ts
 import type { EmailSchema } from "extra-data-types";
 
-const exampleEmail: EmailSchema.StandardEmailType = "example@example.com";
-const exampleGmail: EmailSchema.GmailType = "example@gmail.com";
+const exampleEmail: EmailSchema.StandardEmail_Type = "example@example.com";
+const exampleGmail: EmailSchema.Gmail_Type = "example@gmail.com";
 ```
 
 - function example
 
 ```ts
-import { isStandardEmailType, isGmailType } from "extra-data-types";
+import { is_StandardEmail_Type, is_Gmail_Type } from "extra-data-types";
 
-if (isStandardEmailType("example.example@example.com")) {
+if (is_StandardEmail_Type("example.example@example.com")) {
   //do something when is valid of standard email type
 } else {
   //...
 }
 
-if (isStandardEmailType("example.example@gmail.com")) {
+if (is_StandardEmail_Type("example.example@gmail.com")) {
   //do something when is valid of gmail type
 } else {
   //...
@@ -37,25 +37,10 @@ if (isStandardEmailType("example.example@gmail.com")) {
 
 ## Currently Support
 
-```ts
-email type: 
-EmailSchema.StandardEmail_Type
-EmailSchema.Gmail_Type
-EmailSchema.QQmail_Type
-
-date type:
-DateSchema.YYYYMMDD_Type
-DateSchema.YYYYMMMDD_Type
-
-email func:
-IS_STANDARDEMAIL_TYPE,
-IS_GMAIL_TYPE
-IS_QQMAIL_TYPE
-
-date func:
-is_YYYYMMDD_Type
-is_YYYYMMMDD_Type
-```
+| Schema |                                           Type                                            |                            Function                            |
+|:------:|:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------:|
+| Email  |   EmailSchema.StandardEmail_Type </br> EmailSchema.Gmail_Type </br> EmailSchema.QQmail_Type  |   is_StandardEmail_Type </br> is_Gmail_Type </br> is_QQmail_Type   |
+|  Date  |                 DateSchema.YYYYMMDD_Type </br>  DateSchema.YYYYMMMDD_Type                  |            is_YYYYMMDD_Type </br>  is_YYYYMMMDD_Type            |
 
 ## Testing
 
