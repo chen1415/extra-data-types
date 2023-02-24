@@ -1,45 +1,45 @@
-import { IS_STANDARDEMAIL_TYPE, IS_GMAIL_TYPE, IS_QQMAIL_TYPE } from './index';
+import { is_StandardEmail_Type, is_Gmail_Type, is_QQmail_Type } from './index';
 
 // =================test Gmail Type==================
 test('test gmail type => true', () => {
-  expect(IS_GMAIL_TYPE('example@gmail.com')).toBe(true);
+  expect(is_Gmail_Type('example@gmail.com')).toBe(true);
 });
 
 test('test gmail type => false', () => {
-  expect(IS_GMAIL_TYPE('example@cmail.com')).toBe(false);
+  expect(is_Gmail_Type('example@cmail.com')).toBe(false);
 });
 
 // =================test QQmail Type==================
 test('test qq-mail type => true', () => {
-  expect(IS_QQMAIL_TYPE('example@qq.com')).toBe(true);
+  expect(is_QQmail_Type('example@qq.com')).toBe(true);
 });
 
 test('test qq-mail type => false', () => {
-  expect(IS_QQMAIL_TYPE('example@qa.com')).toBe(false);
+  expect(is_QQmail_Type('example@qa.com')).toBe(false);
 });
 
 // =================test Standard Email Type==================
 
 test('test standard email type => true', () => {
-  expect(IS_STANDARDEMAIL_TYPE('example.example@example.com')).toBe(true);
+  expect(is_StandardEmail_Type('example.example@example.com')).toBe(true);
 });
 
 test('test standard email type => false', () => {
-  expect(IS_STANDARDEMAIL_TYPE('abcdwww')).toBe(false);
+  expect(is_StandardEmail_Type('abcdwww')).toBe(false);
 });
 
 test('test standard email type => false', () => {
-  expect(IS_STANDARDEMAIL_TYPE(112)).toBe(false);
+  expect(is_StandardEmail_Type(112)).toBe(false);
 });
 
 test('test standard email type => false', () => {
-  expect(IS_STANDARDEMAIL_TYPE('asdkfjaksdjfaskjfka')).toBe(false);
+  expect(is_StandardEmail_Type('asdkfjaksdjfaskjfka')).toBe(false);
 });
 
 test('test standard email type => false', () => {
-  expect(IS_STANDARDEMAIL_TYPE('aaa')).toBe(false);
+  expect(is_StandardEmail_Type('aaa')).toBe(false);
 });
 
 test('test standard email type => false', () => {
-  expect(IS_STANDARDEMAIL_TYPE('ccccc')).toBe(false);
+  expect(is_StandardEmail_Type('ccccc')).toBe(false);
 });
