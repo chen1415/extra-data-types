@@ -37,10 +37,20 @@ if (is_StandardEmail_Type("example.example@gmail.com")) {
 
 ## Currently Support
 
-| Schema |                                           Type                                            |                            Function                            |
-|:------:|:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------:|
-| Email  |   EmailSchema.StandardEmail_Type </br> EmailSchema.Gmail_Type </br> EmailSchema.QQmail_Type  |   is_StandardEmail_Type </br> is_Gmail_Type </br> is_QQmail_Type   |
-|  Date  |                 DateSchema.YYYYMMDD_Type </br>  DateSchema.YYYYMMMDD_Type                  |            is_YYYYMMDD_Type </br>  is_YYYYMMMDD_Type            |
+Email:
+
+| Email Schema  | Type_Name          | Function              | :white_check_mark: | :x:         |
+| ------------- | ------------------ | --------------------- | ------------------ | ----------- |
+| StandardEmail | StandardEmail_Type | is_StandardEmail_Type | abc@abc.com        | abc         |
+| QQMail        | QQmail_Type        | is_QQmail_Type        | 123@qq.com         | a@a.com     |
+| Gmail         | Gmail_Type         | is_Gmail_Type         | a@gmail.com        | a@cmail.com |
+
+Date:
+
+| Date Schema  |   Type_Name    |     Function      | :white_check_mark: |       :x:        |
+| -----------  | -------------- | ----------------- | ------------------ | ---------------  |
+| YYYY-MM-DD   | YYYYMMDD_Type  | is_YYYYMMDD_Type  |     1970-01-01     |    19700101      |
+| YYYY-MMM-DD  | YYYYMMMDD_Type | is_YYYYMMMDD_Type |    1970-JAN-01     | 1970-JANUARY-01  |
 
 ## Testing
 
@@ -48,10 +58,11 @@ please use node version ```v16.18.0```
 
 Clone the repository and execute:
 
-```bash
-npm install
-npm test
-```
+
+- npm install
+- npm run build-pr
+- npm run test
+
 
 ## Contributing
 
@@ -59,3 +70,9 @@ Any type of contribution is welcome :)
 
 - Submit [issues](https://github.com/chen1415/extra-data-types/issues) to report bugs or ask questions.
 - Propose [pull requests](https://github.com/chen1415/extra-data-types/pulls) to improve our code.
+
+## Code Contributors
+
+- @chen1415
+- @Leon-wyl
+- @IAmJerryJ
