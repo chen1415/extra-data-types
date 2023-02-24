@@ -13,22 +13,22 @@ A simple lib, gather some useful data types of TS.
 ```ts
 import type { EmailSchema } from "extra-data-types";
 
-const exampleEmail: EmailSchema.StandardEmail_Type = "example@example.com";
-const exampleGmail: EmailSchema.Gmail_Type = "example@gmail.com";
+const exampleEmail: EmailSchema.STANDARD_EMAIL_TYPE = "example@example.com";
+const exampleGmail: EmailSchema.GMAIL_TYPE = "example@gmail.com";
 ```
 
 - function example
 
 ```ts
-import { is_StandardEmail_Type, is_Gmail_Type } from "extra-data-types";
+import { IS_STANDARD_EMAIL_TYPE, IS_GMAIL_TYPE } from "extra-data-types";
 
-if (is_StandardEmail_Type("example.example@example.com")) {
+if (IS_STANDARD_EMAIL_TYPE("example.example@example.com")) {
   //do something when is valid of standard email type
 } else {
   //...
 }
 
-if (is_StandardEmail_Type("example.example@gmail.com")) {
+if (IS_STANDARD_EMAIL_TYPE("example.example@gmail.com")) {
   //do something when is valid of gmail type
 } else {
   //...
@@ -39,22 +39,22 @@ if (is_StandardEmail_Type("example.example@gmail.com")) {
 
 ```ts
 email type: 
-EmailSchema.StandardEmail_Type
-EmailSchema.Gmail_Type
-EmailSchema.QQmail_Type
+EmailSchema.STANDARD_EMAIL_TYPE
+EmailSchema.GMAIL_TYPE
+EmailSchema.QQ_MAIL_TYPE
 
 date type:
-DateSchema.YYYYMMDD_Type
-DateSchema.YYYYMMMDD_Type
+DateSchema.YYYY_MM_DD_TYPE
+DateSchema.YYYY_MMM_DD_TYPE
 
 email func:
-is_StandardEmail_Type,
-is_Gmail_Type
-is_QQmail_Type
+IS_STANDARD_EMAIL_TYPE,
+IS_GMAIL_TYPE
+IS_QQ_MAIL_TYPE
 
 date func:
-is_YYYYMMDD_Type
-is_YYYYMMMDD_Type
+IS_YYYY_MM_DD_TYPE
+IS_YYYY_MMM_DD_TYPE
 ```
 
 ## Testing
