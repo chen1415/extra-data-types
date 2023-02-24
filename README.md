@@ -13,7 +13,7 @@ A simple lib, gather some useful data types of TS.
 ```ts
 import type { EmailSchema } from "extra-data-types";
 
-const exampleEmail: EmailSchema.StandardEmailType = "example@example.com";
+const exampleEmail: EmailSchema.Standard_Email_Type = "example@example.com";
 const exampleGmail: EmailSchema.GmailType = "example@gmail.com";
 ```
 
