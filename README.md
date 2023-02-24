@@ -48,13 +48,13 @@ DateSchema.YYYYMMDD_Type
 DateSchema.YYYYMMMDD_Type
 
 email func:
-is_StandardEmail_Type,
-is_Gmail_Type
-is_QQmail_Type
+IS_STANDARDEMAIL_TYPE,
+IS_GMAIL_TYPE
+IS_QQMAIL_TYPE
 
 date func:
-is_YYYYMMDD_Type
-is_YYYYMMMDD_Type
+IS_YYYYMMDD_TYPE
+IS_YYYYMMMDD_TYPE
 ```
 
 ## Testing
