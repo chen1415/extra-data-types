@@ -1,7 +1,7 @@
 import { IS_YYYY_MM_DD_TYPE } from './index';
 import { IS_YYYY_MMM_DD_TYPE } from './index';
 
-//   =================test YYYY-MM-DD Type==================
+// =================test YYYY-MM-DD Type==================
 test('test YYYY-MM-DD type => true', () => {
   expect(IS_YYYY_MM_DD_TYPE('2014-08-29')).toBe(true);
 });
@@ -26,7 +26,7 @@ test('test YYYY-MM-DD type => false', () => {
   expect(IS_YYYY_MM_DD_TYPE('2014_FEB_29')).toBe(false);
 });
 
-//   =================test YYYY-MMM-DD Type==================
+// =================test YYYY-MMM-DD Type==================
 
 test('test YYYY-MMM-DD type => true', () => {
   expect(IS_YYYY_MMM_DD_TYPE('2014-FEB-29')).toBe(true);
