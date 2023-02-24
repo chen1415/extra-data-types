@@ -59,9 +59,9 @@ please use node version ```v16.18.0```
 Clone the repository and execute:
 
 
-npm install
-npm run build-pr
-npm run test
+- npm install
+- npm run build-pr
+- npm run test
 
 
 ## Contributing
@@ -70,3 +70,9 @@ Any type of contribution is welcome :)
 
 - Submit [issues](https://github.com/chen1415/extra-data-types/issues) to report bugs or ask questions.
 - Propose [pull requests](https://github.com/chen1415/extra-data-types/pulls) to improve our code.
+
+## Code Contributors
+
+- @chen1415
+- @Leon-wyl
+- @IAmJerryJ
