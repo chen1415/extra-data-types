@@ -1,6 +1,6 @@
 import { regDateConfig } from './config';
 
 export declare namespace DateSchema {
-  type YYYYMMDD_Type = typeof regDateConfig.YYYYMMDD_RegConfig;
-  type YYYYMMMDD_Type = typeof regDateConfig.YYYYMMMDD_RegConfig;
+  type YYYY_MM_DD_TYPE = typeof regDateConfig.YYYYMMDD_REGCONFIG;
+  type YYYY_MMM_DD_TYPE = typeof regDateConfig.YYYYMMMDD_REGCONFIG;
 }
