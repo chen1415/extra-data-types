@@ -43,7 +43,7 @@ Email:
 | ------------- | ------------------ | --------------------- | ------------------ | ----------- |
 | StandardEmail | StandardEmail_Type | is_StandardEmail_Type | abc@abc.com        | abc         |
 | QQMail        | QQmail_Type        | is_QQmail_Type        | 123@qq.com         | a@a.com     |
-| Gmail         | Gmail_Type         | is_Gmail_Type         | a@gmail.com        | a@cmail.com |
+| Gmail         | Gmail_Type         | is_Gmail_Type         | a@gmail.com        | a@amail.com |
 
 Date:
 
