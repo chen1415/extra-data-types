@@ -54,7 +54,7 @@ Date:
 
 ## Testing
 
-please use node version ```v14.18.3```
+please use node version ```v14.18.03```
 
 Clone the repository and execute:
 
