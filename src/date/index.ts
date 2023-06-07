@@ -8,3 +8,6 @@ export const is_YYYYMMDD_Type = (x: unknown): x is DateSchema.YYYYMMDD_Type =>
 
 export const is_YYYYMMMDD_Type = (x: unknown): x is DateSchema.YYYYMMMDD_Type =>
   regDateConfig.YYYYMMMDD_RegConfig.test(String(x));
+
+export const is_DDMMYYYY_Type = (x: unknown): x is DateSchema.DDMMYYYY_Type =>
+  regDateConfig.DDMMYYYY_RegConfig.test(String(x));
