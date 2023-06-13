@@ -1,5 +1,8 @@
 import { is_YYYYMMDD_Type } from './index';
 import { is_YYYYMMMDD_Type } from './index';
+import { is_DDMMYYYY_Type } from './index';
+import { is_DDMMMYYYY_Type } from './index';
+import { is_DDMMMYY_Type } from './index';
 
 // =================test YYYY-MM-DD Type==================
 test('test YYYY-MM-DD type => true', () => {
@@ -42,4 +45,58 @@ test('test YYYY-MMM-DD type => false', () => {
 
 test('test YYYY-MMM-DD type => false', () => {
   expect(is_YYYYMMMDD_Type('2014FEB29')).toBe(false);
+});
+
+// =================test DD-MM-YYYY Type==================
+
+test('test DD-MM-YYYY type => true', () => {
+  expect(is_DDMMYYYY_Type('23-09-2022')).toBe(true);
+});
+
+test('test DD-MM-YYYY type => false', () => {
+  expect(is_DDMMYYYY_Type('2022_09_23')).toBe(false);
+});
+
+test('test DD-MM-YYYY type => false', () => {
+  expect(is_DDMMYYYY_Type('23-SEP-2022')).toBe(false);
+});
+
+test('test DD-MM-YYYY type => false', () => {
+  expect(is_DDMMYYYY_Type('2022SEP23')).toBe(false);
+});
+
+// =================test DD-MMM-YYYY Type==================
+
+test('test DD-MMM-YYYY type => true', () => {
+  expect(is_DDMMMYYYY_Type('23-SEP-2022')).toBe(true);
+});
+
+test('test DD-MMM-YYYY type => false', () => {
+  expect(is_DDMMMYYYY_Type('2022_09_23')).toBe(false);
+});
+
+test('test DD-MMM-YYYY type => false', () => {
+  expect(is_DDMMMYYYY_Type('23-09-2022')).toBe(false);
+});
+
+test('test DD-MMM-YYYY type => false', () => {
+  expect(is_DDMMMYYYY_Type('2022SEP23')).toBe(false);
+});
+
+// =================test DD-MMM-YY Type==================
+
+test('test DD-MMM-YY type => true', () => {
+  expect(is_DDMMMYY_Type('23-SEP-22')).toBe(true);
+});
+
+test('test DD-MMM-YY type => false', () => {
+  expect(is_DDMMMYY_Type('2022_09_23')).toBe(false);
+});
+
+test('test DD-MMM-YY type => false', () => {
+  expect(is_DDMMMYY_Type('23-09-2022')).toBe(false);
+});
+
+test('test DD-MMM-YY type => false', () => {
+  expect(is_DDMMMYY_Type('2022SEP23')).toBe(false);
 });
