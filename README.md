@@ -52,6 +52,8 @@ Date:
 | YYYY-MM-DD   | YYYYMMDD_Type  | is_YYYYMMDD_Type  |     1970-01-01     |    19700101      |
 | YYYY-MMM-DD  | YYYYMMMDD_Type | is_YYYYMMMDD_Type |    1970-JAN-01     | 1970-JANUARY-01  |
 | DD-MM-YYYY  | DDMMYYYY_Type | is_DDMMYYYY_Type |    01-01-1970     | 1-1-1970 |
+| DD-MMM-YYYY  | DDMMMYYYY_Type | is_DDMMMYYYY_Type |    01-JAN-1970     | 1-1-1970 |
+| DD-MMM-YY  | DDMMMYY_Type | is_DDMMMYY_Type |    01-JAN-70     | 1-1-1970 |
 
 ## Testing
 
